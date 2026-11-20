@@ -5,21 +5,21 @@
 class Toolbox < Formula
   desc "A collection of various cli tools"
   homepage "https://github.com/tiborhercz/toolbox"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.1/toolbox_0.8.1_darwin_amd64.tar.gz"
-      sha256 "da654d0fc1ca2d9d7b09b64992babed7e75b9d2b7d215cf806f0aea27b94b1e6"
+      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.2/toolbox_0.8.2_darwin_amd64.tar.gz"
+      sha256 "e5d89e29c47c85381b72faa6ec250ed065deb148000616c3b17d758cfb400351"
 
       define_method(:install) do
         bin.install "toolbox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.1/toolbox_0.8.1_darwin_arm64.tar.gz"
-      sha256 "b33d692198d4715b39008b53dda0584af6cd07dd602034c430852db6c336d2ba"
+      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.2/toolbox_0.8.2_darwin_arm64.tar.gz"
+      sha256 "53f10cbbf2de3ff8222e63cff7d2ca4fc6d575f95f502ddceae901c7f91f5a0b"
 
       define_method(:install) do
         bin.install "toolbox"
@@ -29,15 +29,15 @@ class Toolbox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.1/toolbox_0.8.1_linux_amd64.tar.gz"
-      sha256 "a1f94e562ce58bfe216802f7da915dab967e07c65b1c1a095fdf49d054482a16"
+      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.2/toolbox_0.8.2_linux_amd64.tar.gz"
+      sha256 "915eedf0b5f4fadb1ccd33210a11dc3fd0eae4264e94a9142c1d17f777f896d5"
       define_method(:install) do
         bin.install "toolbox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.1/toolbox_0.8.1_linux_arm64.tar.gz"
-      sha256 "2061249f67463eb929da7667080c8076a0fa5c4929c2e0be81cae1ce25edc27d"
+      url "https://github.com/tiborhercz/toolbox/releases/download/v0.8.2/toolbox_0.8.2_linux_arm64.tar.gz"
+      sha256 "00cd7471b5664b32fc3e32853b7bcaade1bcc2fba79d9213a78875f94203d8ee"
       define_method(:install) do
         bin.install "toolbox"
       end
